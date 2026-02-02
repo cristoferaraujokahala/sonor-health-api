@@ -1,0 +1,16 @@
+tensorflow
+librosa
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+SoundFile
+tqdm
+kagglehub
+fastapi
+uvicorn
+gunicorn
+python-multipart
+requests
+boto3
