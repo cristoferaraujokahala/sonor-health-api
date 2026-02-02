@@ -84,3 +84,8 @@ Ajudo a seguir com:
 - Gerar exemplo de componente Expo gravador+uploader no diretório `expo/`.
 - Gerar política IAM mínima JSON para dar `s3:GetObject` apenas ao objeto do modelo.
 
+# https://github.com/cristoferaraujokahala/sonor-health-api/releases/download/V1.0/config.json
+
+# https://github.com/cristoferaraujokahala/sonor-health-api/releases/download/V1.0/label_encoder.pkl
+
+# https://github.com/cristoferaraujokahala/sonor-health-api/releases/download/V1.0/model.weights.h5
