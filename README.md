@@ -49,7 +49,6 @@ Deploy no Render (passo-a-passo resumido)
 ```bash
 gunicorn -k uvicorn.workers.UvicornWorker main:app --bind 0.0.0.0:$PORT
 ```
-
 (Alternativa) `uvicorn main:app --host 0.0.0.0 --port $PORT` — serve bem para testes, mas `gunicorn` é mais robusto em produção.
 
 Git — comandos rápidos para subir ao GitHub
@@ -63,26 +62,12 @@ git branch -M main
 git push -u origin main
 ```
 
-Sugestão de `.gitignore`
+`.gitignore`
 - `venv/` ou `ENV/` conforme seu virtualenv
 - `__pycache__/`
 - `*.pyc`
 - `.env`
 - `*.h5` (ou inclua apenas os modelos se quiser subir)
-
-Expo Android (cliente)
-- O app Android deve enviar `multipart/form-data` para `POST https://SEU_SERVICO/predict/` com campo `file`.
-- Use `expo-av` para gravar e envie a `uri` no `FormData` (não defina manualmente o `Content-Type`).
-
-Segurança e produção
-- Use HTTPS (Render fornece TLS).
-- Restrinja CORS em produção a origens necessárias.
-- Considere autenticação (API key ou JWT) antes de expor o endpoint publicamente.
-
-Ajudo a seguir com:
-- Gerar `.gitignore` e commit automático (posso criar e commitar aqui).
-- Gerar exemplo de componente Expo gravador+uploader no diretório `expo/`.
-- Gerar política IAM mínima JSON para dar `s3:GetObject` apenas ao objeto do modelo.
 
 # https://github.com/cristoferaraujokahala/sonor-health-api/releases/download/V1.0/config.json
 
